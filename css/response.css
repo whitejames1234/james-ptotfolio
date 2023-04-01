@@ -1,0 +1,283 @@
+:root {
+  --light-color: #f2f9ff;
+  --premiere-200: #e9f4fe;
+  --premiere-500: #4ca9f5;
+  --premiere-600: hsla(207, 77%, 48%, 0.904);
+  --premiere-700: #1c85db;
+  --dark-color: #1e2021;
+}
+
+
+@media (max-width: 81.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 65.625em) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero-head-line {
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .hero-copy {
+    line-height: 30px;
+    margin-bottom: 4rem;
+  }
+
+  .Hero-img {
+    width: 80%;
+  }
+
+}
+
+
+  @media (max-width: 60em){
+      /* abour us section start   */
+    .about-boxs-container {
+      display: grid;
+      grid-template-columns:1fr; }
+
+      /* why us section start   */
+      .why {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+      }
+      .why-container {
+    
+        grid-template-columns:1fr;
+  
+      }
+
+      .why-bft-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+      }
+
+      /* our service start    */
+      .servies-container {
+       
+        grid-template-columns: repeat(2, 1fr);
+   
+      }
+
+      .test-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      }
+
+  
+
+}
+  
+
+
+
+
+
+
+@media (max-width: 58.75em) {
+
+
+  html {
+    font-size: 40%;
+  }
+
+  /* header and hero section */
+  .header{
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+  .hero{
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+
+  .hero-buttons {
+   
+    gap: 3rem;
+    
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .nav-logo {
+    width: 18rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2;
+  }
+
+  .main-nav {
+    background-color: var(--premiere-700);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    z-index: 1;
+    transition: all 0.5s ease-in;
+    /*Hident */
+    /*allow no transition at all*/
+    /*display: none;*/
+    /* 1/ Hide it visually */
+    opacity: 0;
+
+    /* 2/ Make it  unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /* 3/ Hide it from screen readers*/
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .links-box {
+    flex-direction: column;
+    margin-top: 14rem;
+  }
+  .nav-link {
+    font-size: 3.6rem;
+    border-bottom: none;
+  }
+  .nav-link:hover {
+    border-bottom: none;
+  }
+
+  .hero-head-line {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .hero-welcom {
+    margin-top: 2.7rem;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  .hero-copy {
+    text-align: center;
+    line-height: 25px;
+  }
+  .hero-buttons {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .hero-img-box {
+    width: 80%;
+    text-align: center;
+  }
+  .Hero-img {
+    display: none;
+  }
+
+  .mbl-hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    width : 80%;
+  }
+
+
+
+
+/* book section start  */
+.home-cta-box {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+}
+  .home-cta-container {
+  flex-direction: column;
+  gap: 2.6rem;
+  text-align: center;
+  padding: 4rem 4.6rem;
+  }
+.cta-title-home{
+  line-height: 40px;
+}
+
+.footer-logo{
+  width: 12rem;
+}
+.footer-links {
+
+  gap: 4rem;
+}
+}
+
+@media (max-width : 48.75em) {
+
+.footer-social-media {
+  font-size: 4rem;
+  flex-direction: column;
+
+}
+
+.footer-links {
+  flex-direction: column;
+}
+
+.why-bft-container {
+  display: grid;
+  grid-template-columns: 1fr;
+     }
+  
+
+}
+
+
+@media (max-width: 40.625em) {
+  .servies-container {
+       
+    grid-template-columns:1fr;
+
+  }
+  .test-container {
+  
+    grid-template-columns:1fr;
+      }
+
+  .feauter-logo {
+    width: 4.5rem;
+  }
+  .feauter-name{
+    display: none;
+  }
+
+
+}
+
+
+
+/**********************************/
+/*hero  section start */
+
+/*hero  section end   */
+/**********************************/
+
+/**********************************/
+/*service section start */
